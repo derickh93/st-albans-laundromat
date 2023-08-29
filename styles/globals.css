@@ -51,3 +51,16 @@ code {
 .tham-menu {
   display: none;
 }
+
+.tiles {
+  box-shadow: 10px 10px 5px gray;
+  transition-duration: 50ms;
+
+}
+
+.tiles:hover { 
+  opacity: .75;
+  transform: scale(1.10);
+  cursor: pointer;
+}
+

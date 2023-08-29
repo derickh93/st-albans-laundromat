@@ -91,44 +91,38 @@ export default function Home() {
               <span className="text-[#FFDE59] text-[40px] drop-shadow-lg">
                 Laundromat
               </span>
-              {/* <div
+              <div
                 id="tham-menu-div"
                 className="grid grid-cols-1 gap-1 font-bold text-center text-white text-2xl w-full tham-menu"
               >
                 <div
-                  id="hover-div-1"
-                  className="bg-[#0CC0DF] drop-shadow-lg flex flex-col h-full justify-center items-center transform transition-transform duration-300 hover:opacity-75 hover:scale-110"
+                  class="bg-[#0CC0DF] tiles flex flex-col h-full justify-center items-center opacity-80 px-4 py-3"
+                  role="alert"
                 >
-                  WASH & <br></br>WIN PRIZES
+                  <p class="font-bold">
+                    {" "}
+                    WASH & WIN PRIZES
+                  </p>
+                  <p class="text-sm">
+                  Enter our prize raffle each time you wash with us.
+                  </p>
                 </div>
-                <div
-                  id="hover-div-2"
-                  className="bg-[#FF66C4] drop-shadow-lg flex flex-col h-full justify-center items-center transform transition-transform duration-300 hover:opacity-75 hover:scale-110"
-                >
+                <div className="bg-[#FF66C4] tiles flex flex-col h-full justify-center items-center opacity-80">
                   SELF <br></br>SERVICE
                 </div>
-                <div
-                  id="hover-div-3"
-                  className="bg-[#CB6CE6] drop-shadow-lg flex flex-col h-full justify-center items-center transform transition-transform duration-300 hover:opacity-75 hover:scale-110"
-                >
+                <div className="bg-[#CB6CE6] tiles flex flex-col h-full justify-center items-center opacity-80">
                   DROP OFF<br></br>SERVICE
                 </div>
-                <div
-                  id="hover-div-4"
-                  className="bg-[#FF914D] drop-shadow-lg flex flex-col h-full justify-center items-center transform transition-transform duration-300 hover:opacity-75 hover:scale-110"
-                >
+                <div className="bg-[#FF914D] tiles flex flex-col h-full justify-center items-center opacity-80">
                   PICK UP AND <br></br>DELIVERY
                 </div>
-                <div
-                  id="hover-div-5"
-                  className="bg-[#6422B8] drop-shadow-lg flex flex-col h-full justify-center items-center transform transition-transform duration-300 hover:opacity-75 hover:scale-110"
-                >
+                <div className="bg-[#6422B8] tiles flex flex-col h-full justify-center items-center opacity-80">
                   OUR LOCATION
                 </div>
-                <div className="bg-[#FFB859] drop-shadow-lg flex flex-col h-full justify-center items-center transform transition-transform duration-300 hover:opacity-75 hover:scale-110">
+                <div className="bg-[#FFB859] tiles flex flex-col h-full justify-center items-center opacity-80">
                   OPEN 7 DAYS<br></br>8AM - 8PM
                 </div>
-              </div>{" "} */}
+              </div>{" "}
             </div>
 
             <div className="absolute transform bottom-0 text-white text-center items-center">
@@ -166,7 +160,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div>
+              <div className="pb-2">
                 <p className="text-dark">
                   <a className="text-dark" href="https://derickh.dev">
                     <u>Queens Software Solutions</u>
@@ -178,38 +172,36 @@ export default function Home() {
             </div>
           </div>
           <div className="hide-on-small lg:col-span-3 flex">
-            <div className="grid grid-cols-2 gap-0 font-bold text-center text-white text-2xl w-full">
+            <div className="grid grid-cols-2 gap-3 font-bold text-center text-white text-2xl w-full">
               <div
                 id="hover-div-1"
-                className="bg-[#0CC0DF] drop-shadow-lg flex flex-col h-full justify-center items-center transform transition-transform duration-300 hover:opacity-75 hover:scale-110"
+                className="bg-[#0CC0DF] tiles flex flex-col h-full justify-center items-center"
               >
                 WASH & <br></br>WIN PRIZES
               </div>
               <div
                 id="hover-div-2"
-                className="bg-[#FF66C4] drop-shadow-lg flex flex-col h-full justify-center items-center transform transition-transform duration-300 hover:opacity-75 hover:scale-110"
+                className="bg-[#FF66C4] tiles flex flex-col h-full justify-center items-center"
               >
                 SELF <br></br>SERVICE
               </div>
               <div
                 id="hover-div-3"
-                className="bg-[#CB6CE6] drop-shadow-lg flex flex-col h-full justify-center items-center transform transition-transform duration-300 hover:opacity-75 hover:scale-110"
+                className="bg-[#CB6CE6] tiles flex flex-col h-full justify-center items-center"
               >
                 DROP OFF<br></br>SERVICE
               </div>
               <div
                 id="hover-div-4"
-                className="bg-[#FF914D] drop-shadow-lg flex flex-col h-full justify-center items-center transform transition-transform duration-300 hover:opacity-75 hover:scale-110"
+                className="bg-[#FF914D] tiles flex flex-col h-full justify-center items-center"
               >
                 PICK UP AND <br></br>DELIVERY
               </div>
-              <div
-                className="bg-[#6422B8] drop-shadow-lg flex flex-col h-full justify-center items-center transform transition-transform duration-300 hover:opacity-75 hover:scale-110"
-              >
+              <div className="bg-[#6422B8] tiles flex flex-col h-full justify-center items-center">
                 OUR LOCATION<br></br>18005 Linden Blvd<br></br>Queens, NY 11434
                 <br></br>(929) 933-7507
               </div>
-              <div className="bg-[#FFB859] drop-shadow-lg flex flex-col h-full justify-center items-center transform transition-transform duration-300 hover:opacity-75 hover:scale-110">
+              <div className="bg-[#FFB859] tiles flex flex-col h-full justify-center items-center">
                 OPEN 7 DAYS<br></br>8AM - 8PM
               </div>
             </div>
