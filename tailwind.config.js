@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  
   content: [
     // "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -7,8 +8,8 @@ module.exports = {
  
   ],
   theme: {
-    extend: {        display: ["group-hover"],
+    extend: {
   },
   },
-  plugins: [],
+  plugins: [require('tailwind-hamburgers')],
 }

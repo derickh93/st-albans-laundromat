@@ -41,3 +41,13 @@ code {
 .title {
   font-family: "Twister", sans-serif;
 }
+
+@media (max-width: 1024px) {
+  .hide-on-small {
+    display: none;
+  }
+}
+
+.tham-menu {
+  display: none;
+}

@@ -1,6 +1,65 @@
 import Head from "next/head";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    const hoverDiv1 = document.getElementById("hover-div-1");
+    const initialText1 = "WASH & WIN PRIZES";
+    const hoveredText1 = "Enter our prize raffle each time you wash with us.";
+
+    hoverDiv1.addEventListener("mouseenter", () => {
+      hoverDiv1.textContent = hoveredText1;
+    });
+    hoverDiv1.addEventListener("mouseleave", () => {
+      hoverDiv1.textContent = initialText1;
+    });
+
+    const hoverDiv2 = document.getElementById("hover-div-2");
+    const initialText2 = "SELF SERVICE";
+    const hoveredText2 = "Available everyday. Last wash is at 7pm.";
+
+    hoverDiv2.addEventListener("mouseenter", () => {
+      hoverDiv2.textContent = hoveredText2;
+    });
+
+    hoverDiv2.addEventListener("mouseleave", () => {
+      hoverDiv2.textContent = initialText2;
+    });
+
+    const hoverDiv3 = document.getElementById("hover-div-3");
+    const initialText3 = "DROP OFF SERVICE";
+    const hoveredText3 =
+      "Drop off available daily. Come Monday - Thursday for special pricing.";
+
+    hoverDiv3.addEventListener("mouseenter", () => {
+      hoverDiv3.textContent = hoveredText3;
+    });
+
+    hoverDiv3.addEventListener("mouseleave", () => {
+      hoverDiv3.textContent = initialText3;
+    });
+
+    const hoverDiv4 = document.getElementById("hover-div-4");
+    const initialText4 = "PICKUP & DELIVERY";
+    const hoveredText4 = "Coming soon!";
+
+    hoverDiv4.addEventListener("mouseenter", () => {
+      hoverDiv4.textContent = hoveredText4;
+    });
+
+    hoverDiv4.addEventListener("mouseleave", () => {
+      hoverDiv4.textContent = initialText4;
+    });
+
+    const tham = document.querySelector(".tham");
+
+    tham.addEventListener("click", () => {
+      tham.classList.toggle("tham-active");
+      var para = document.getElementById("tham-menu-div");
+      para.classList.toggle("tham-menu");
+    });
+  }, []);
+
   return (
     <div>
       <Head>
@@ -17,31 +76,71 @@ export default function Home() {
       </Head>
 
       <main>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5">
-          <div className="h-screen w-full h-full flex items-center justify-center lg:col-span-2 bg-cover bg-center flex flex-col bg-[url('../img/laundry-store.jpg')] relative ">
-            <div class="absolute transform top-0 text-center pt-10 font-bold">
-              {" "}
-              <span className="title text-[#004AAD] text-[90px] drop-shadow-md">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 ">
+          <div className="h-screen w-full h-full flex items-center justify-center lg:col-span-2 md:col-span-5 bg-cover bg-center flex flex-col bg-[url('/laundry-store.jpg')] relative ">
+            <div className="absolute transform top-0 text-center pt-10 font-bold">
+              <div class="lg:hidden tham tham-e-squeeze tham-w-9">
+                <div class="tham-box">
+                  <div class="tham-inner" />
+                </div>
+              </div>{" "}
+              <span className="title text-[#004AAD] text-[90px] drop-shadow-lg">
                 St. Albans
               </span>
               <br />
-              <span className="text-[#FFDE59] text-[40px] drop-shadow-md">
+              <span className="text-[#FFDE59] text-[40px] drop-shadow-lg">
                 Laundromat
               </span>
+              {/* <div
+                id="tham-menu-div"
+                className="grid grid-cols-1 gap-1 font-bold text-center text-white text-2xl w-full tham-menu"
+              >
+                <div
+                  id="hover-div-1"
+                  className="bg-[#0CC0DF] drop-shadow-lg flex flex-col h-full justify-center items-center transform transition-transform duration-300 hover:opacity-75 hover:scale-110"
+                >
+                  WASH & <br></br>WIN PRIZES
+                </div>
+                <div
+                  id="hover-div-2"
+                  className="bg-[#FF66C4] drop-shadow-lg flex flex-col h-full justify-center items-center transform transition-transform duration-300 hover:opacity-75 hover:scale-110"
+                >
+                  SELF <br></br>SERVICE
+                </div>
+                <div
+                  id="hover-div-3"
+                  className="bg-[#CB6CE6] drop-shadow-lg flex flex-col h-full justify-center items-center transform transition-transform duration-300 hover:opacity-75 hover:scale-110"
+                >
+                  DROP OFF<br></br>SERVICE
+                </div>
+                <div
+                  id="hover-div-4"
+                  className="bg-[#FF914D] drop-shadow-lg flex flex-col h-full justify-center items-center transform transition-transform duration-300 hover:opacity-75 hover:scale-110"
+                >
+                  PICK UP AND <br></br>DELIVERY
+                </div>
+                <div
+                  id="hover-div-5"
+                  className="bg-[#6422B8] drop-shadow-lg flex flex-col h-full justify-center items-center transform transition-transform duration-300 hover:opacity-75 hover:scale-110"
+                >
+                  OUR LOCATION
+                </div>
+                <div className="bg-[#FFB859] drop-shadow-lg flex flex-col h-full justify-center items-center transform transition-transform duration-300 hover:opacity-75 hover:scale-110">
+                  OPEN 7 DAYS<br></br>8AM - 8PM
+                </div>
+              </div>{" "} */}
             </div>
 
-            <div className="absolute transform bottom-0 text-white">
-              <h5>Social</h5>
-              <div className="flex flex-row">
-
-              <div>
+            <div className="absolute transform bottom-0 text-white text-center items-center">
+              <div className="flex flex-row items-center justify-evenly">
+                <div>
                   <a
                     className="btn btn-social-icon btn-facebook"
                     href="https://www.facebook.com/stalbanslaundromat"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5"
+                      className="h-5 w-5"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                     >
@@ -49,7 +148,7 @@ export default function Home() {
                     </svg>{" "}
                   </a>
                 </div>
-
+                <div> Website by</div>
                 <div>
                   <a
                     className="btn btn-social-icon btn-instagram"
@@ -57,7 +156,7 @@ export default function Home() {
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5"
+                      className="h-5 w-5"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                     >
@@ -68,66 +167,50 @@ export default function Home() {
               </div>
 
               <div>
-                <a
-                  className="text-dark"
-                  id="privacyButton"
-                  href="#privacy"
-                  // onClick={() => setModalPrivacyShow(true)}
-                >
-                  <span>
-                    <u>PRIVACY POLICY</u>{" "}
-                  </span>
-                </a>
-                |
-                <a
-                  className="text-dark"
-                  id="termsButton"
-                  href="#terms"
-                  // onClick={() => setModalTermShow(true)}
-                >
-                  <span>
-                    {" "}
-                    <u>TERMS OF SERVICE</u>
-                  </span>
-                </a>
                 <p className="text-dark">
-                  Copyright © 2023 | Saint Albans Laundromat
-                  <br />
-                  Website by
-                  <br />
                   <a className="text-dark" href="https://derickh.dev">
                     <u>Queens Software Solutions</u>
                   </a>
                   <br />
+                  Copyright © 2023 | Saint Albans Laundromat
                 </p>
               </div>
             </div>
           </div>
-          <div className="lg:col-span-3 flex">
+          <div className="hide-on-small lg:col-span-3 flex">
             <div className="grid grid-cols-2 gap-0 font-bold text-center text-white text-2xl w-full">
-              <div className="bg-[#0CC0DF] drop-shadow-md flex flex-col h-full justify-center items-center transform transition duration-150 hover:opacity-75 group">
+              <div
+                id="hover-div-1"
+                className="bg-[#0CC0DF] drop-shadow-lg flex flex-col h-full justify-center items-center transform transition-transform duration-300 hover:opacity-75 hover:scale-110"
+              >
                 WASH & <br></br>WIN PRIZES
-                <span class="hidden group-hover:block">details...</span>
               </div>
-              <div className="bg-[#FF66C4] drop-shadow-md flex flex-col h-full justify-center items-center transform transition duration-150 hover:opacity-75 group">
+              <div
+                id="hover-div-2"
+                className="bg-[#FF66C4] drop-shadow-lg flex flex-col h-full justify-center items-center transform transition-transform duration-300 hover:opacity-75 hover:scale-110"
+              >
                 SELF <br></br>SERVICE
-                <span class="hidden group-hover:block">details...</span>
               </div>
-              <div className="bg-[#CB6CE6] drop-shadow-md flex flex-col h-full justify-center items-center transform transition duration-150 hover:opacity-75 group">
+              <div
+                id="hover-div-3"
+                className="bg-[#CB6CE6] drop-shadow-lg flex flex-col h-full justify-center items-center transform transition-transform duration-300 hover:opacity-75 hover:scale-110"
+              >
                 DROP OFF<br></br>SERVICE
-                <span class="hidden group-hover:block">details...</span>
               </div>
-              <div className="bg-[#FF914D] drop-shadow-md flex flex-col h-full justify-center items-center transform transition duration-150 hover:opacity-75 group">
+              <div
+                id="hover-div-4"
+                className="bg-[#FF914D] drop-shadow-lg flex flex-col h-full justify-center items-center transform transition-transform duration-300 hover:opacity-75 hover:scale-110"
+              >
                 PICK UP AND <br></br>DELIVERY
-                <span class="hidden group-hover:block">details...</span>
               </div>
-              <div className="bg-[#6422B8] drop-shadow-md flex flex-col h-full justify-center items-center transform transition duration-150 hover:opacity-75 group">
-                DRY CLEAN
-                <span class="hidden group-hover:block">details...</span>
+              <div
+                className="bg-[#6422B8] drop-shadow-lg flex flex-col h-full justify-center items-center transform transition-transform duration-300 hover:opacity-75 hover:scale-110"
+              >
+                OUR LOCATION<br></br>18005 Linden Blvd<br></br>Queens, NY 11434
+                <br></br>(929) 933-7507
               </div>
-              <div className="bg-[#FFB859] drop-shadow-md flex flex-col h-full justify-center items-center transform transition duration-150 hover:opacity-75 group">
+              <div className="bg-[#FFB859] drop-shadow-lg flex flex-col h-full justify-center items-center transform transition-transform duration-300 hover:opacity-75 hover:scale-110">
                 OPEN 7 DAYS<br></br>8AM - 8PM
-                <span class="hidden group-hover:block">details...</span>
               </div>
             </div>
           </div>
