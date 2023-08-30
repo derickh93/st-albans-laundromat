@@ -142,7 +142,6 @@ export default function Home() {
                     </svg>{" "}
                   </a>
                 </div>
-                <div> Website by</div>
                 <div>
                   <a
                     className="btn btn-social-icon btn-instagram"
@@ -162,11 +161,9 @@ export default function Home() {
 
               <div className="pb-2">
                 <p className="text-dark">
-                  <a className="text-dark" href="https://derickh.dev">
+                  Copyright © 2023 | <a className="text-dark" href="https://derickh.dev">
                     <u>Queens Software Solutions</u>
                   </a>
-                  <br />
-                  Copyright © 2023 | Saint Albans Laundromat
                 </p>
               </div>
             </div>
