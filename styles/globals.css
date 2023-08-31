@@ -54,7 +54,7 @@ code {
 
 .tiles {
   box-shadow: 10px 10px 5px gray;
-  transition-duration: 50ms;
+  transition-duration: 50;
 
 }
 
@@ -62,5 +62,11 @@ code {
   opacity: .75;
   transform: scale(1.10);
   cursor: pointer;
+}
+
+.bgimg {
+  /* background-image: url('../public/laundry-store-min.jpg'); */
+  background-color: aqua;
+
 }
 
