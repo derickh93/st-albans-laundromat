@@ -1,6 +1,6 @@
 import React from "react";
 
-function Tiles({ tileInfo,className}) {
+function LargeTiles({ tileInfo,className}) {
 
   function renderTiles() {
     let tileArr = [];
@@ -28,4 +28,4 @@ function Tiles({ tileInfo,className}) {
   );
 }
 
-export default Tiles;
+export default LargeTiles;

@@ -1,10 +1,12 @@
+
+@import url("https://fonts.cdnfonts.com/css/twister-2");
+@import url("https://fonts.cdnfonts.com/css/open-sauce-one");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.cdnfonts.com/css/twister-2");
 
-@import url("https://fonts.cdnfonts.com/css/open-sauce-one");
 
 html,
 body {
