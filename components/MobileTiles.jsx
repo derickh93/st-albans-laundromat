@@ -8,7 +8,7 @@ function MobileTiles({ tileInfo }) {
       let bgColor = element.bgColor;
 
       tileArr.push(
-        <div key={i + 1} className={tileClass} role="alert"
+        <div key={i + 1} className={tileClass}
         style={{backgroundColor:bgColor}}
         >
           <p className="font-bold">{element.initialText}</p>
@@ -22,7 +22,7 @@ function MobileTiles({ tileInfo }) {
   return (
     <div
       id="tham-menu-div"
-      className="grid grid-cols-1 gap-2 font-bold text-center text-white text-2xl w-full tham-menu"
+      className="grid grid-cols-1 gap-2 font-bold text-center text-white text-2xl w-full tham-menu hide-on-large"
     >
      {renderTiles()}
     </div>

@@ -50,6 +50,12 @@ code {
   }
 }
 
+@media (min-width: 1024px) {
+  .hide-on-large {
+    display: none;
+  }
+}
+
 .tham-menu {
   display: none;
 }
