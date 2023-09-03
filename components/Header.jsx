@@ -7,8 +7,7 @@ function Header({ className, tileInfo}) {
   return (
     <div className={className}>
       <div className="absolute transform top-0 text-center pt-10 font-bold">
-        <div className="flex flex-row">
-          <Menu className={"lg:hidden"} />
+          <Menu className={"lg:hidden pb-5"} />
 
           <div>
             <span className="title text-[#004AAD] text-7xl drop-shadow-lg">
@@ -18,7 +17,6 @@ function Header({ className, tileInfo}) {
             <span className="text-[#FFDE59] text-5xl drop-shadow-lg">
               Laundromat
             </span>
-          </div>
         </div>
       </div>
       <MobileTiles tileInfo={tileInfo}/>
