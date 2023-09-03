@@ -4,9 +4,13 @@ function MobileTiles({ tileInfo }) {
   function renderTiles() {
     let tileArr = [];
     tileInfo.forEach((element, i) => {
-      let tileClass = `bg-[${element.bgColor}] tiles flex flex-col h-full justify-center items-center opacity-80 px-4 py-3`;
+      let tileClass = `tiles flex flex-col h-full justify-center items-center opacity-80 px-4 py-3`;
+      let bgColor = element.bgColor;
+
       tileArr.push(
-        <div key={i + 1} className={tileClass} role="alert">
+        <div key={i + 1} className={tileClass} role="alert"
+        style={{backgroundColor:bgColor}}
+        >
           <p className="font-bold">{element.initialText}</p>
           <p className="text-sm">{element.hoveredText}
           </p>{" "}

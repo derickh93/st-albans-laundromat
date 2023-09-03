@@ -6,12 +6,14 @@ function LargeTiles({ tileInfo,className}) {
     let tileArr = [];
     tileInfo.forEach((element, i) => {
       let id = `hover-div-${i + 1}`;
-      let tileClass = `bg-[${element.bgColor}] tiles flex flex-col h-full justify-center`
+      let bgColor = element.bgColor;
+      let tileClass = `tiles flex flex-col h-full justify-center`
       tileArr.push(
         <div
         key={i+1}
           id={id}
           className={tileClass}
+          style={{backgroundColor:bgColor}}
         >
           {element.initialText}
         </div>
