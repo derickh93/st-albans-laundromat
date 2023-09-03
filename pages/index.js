@@ -2,8 +2,6 @@ import LargeTiles from "@components/LargeTiles";
 import Header from "@components/Header";
 import Head from "next/head";
 import Script from "next/script";
-import Menu from "@components/Menu";
-import MobileTiles from "@components/MobileTiles";
 import { useEffect } from "react";
 
 export default function Home() {
