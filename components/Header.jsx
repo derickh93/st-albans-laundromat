@@ -15,7 +15,7 @@ function Header({ className, tileInfo}) {
             </span>
             <br />
             <span className="text-[#FFDE59] text-5xl drop-shadow-lg">
-              Laundromat
+              LAUNDROMAT
             </span>
         </div>
       </div>
