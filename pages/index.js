@@ -1,65 +1,69 @@
-import Body from "@components/Body";
+import Tiles from "@components/Tiles";
 import Footer from "@components/Footer";
 import Header from "@components/Header";
 import Head from "next/head";
 import Script from "next/script";
-import { useEffect } from "react";
 import Menu from "@components/Menu";
+import Mobile from "@components/Mobile";
+import { useEffect } from "react";
 
 export default function Home() {
+  const tileInfo = [
+    {
+      initialText: "WASH & WIN PRIZES",
+      hoveredText: "Enter our prize raffle each time you wash with us.",
+      bgColor: "#0CC0DF",
+    },
+    {
+      initialText: "SELF SERVICE",
+      hoveredText: "Available everyday. Last wash is at 7pm.",
+      bgColor: "#FF66C4",
+    },
+    {
+      initialText: "DROP OFF SERVICE",
+      hoveredText:
+        "Drop off available daily. Come Monday - Thursday for special pricing.",
+      bgColor: "#CB6CE6",
+    },
+    {
+      initialText: "PICKUP & DELIVERY",
+      hoveredText: "Coming soon!",
+      bgColor: "#FF914D",
+    },
+    {
+      initialText:
+        "OUR LOCATION 18005 Linden Blvd Queens, NY 11434 (929) 933-7507",
+      hoveredText: "",
+      bgColor: "#6422B8",
+    },
+    {
+      initialText: "OPEN 7 DAYS 8AM - 8PM",
+      hoveredText: "",
+      bgColor: "#FFB859",
+    },
+  ];
+
   useEffect(() => {
-    const hoverDiv1 = document.getElementById("hover-div-1");
-    const initialText1 = "WASH & WIN PRIZES";
-    const hoveredText1 = "Enter our prize raffle each time you wash with us.";
+    function tileTextHover(arr) {
+      arr.forEach((element, i) => {
+        const hoverDiv = document.getElementById("hover-div-" + (i + 1));
+        const initialText = element.initialText;
+        const hoveredText = element.hoveredText;
 
-    hoverDiv1.addEventListener("mouseenter", () => {
-      hoverDiv1.textContent = hoveredText1;
-    });
-    hoverDiv1.addEventListener("mouseleave", () => {
-      hoverDiv1.textContent = initialText1;
-    });
-
-    const hoverDiv2 = document.getElementById("hover-div-2");
-    const initialText2 = "SELF SERVICE";
-    const hoveredText2 = "Available everyday. Last wash is at 7pm.";
-
-    hoverDiv2.addEventListener("mouseenter", () => {
-      hoverDiv2.textContent = hoveredText2;
-    });
-
-    hoverDiv2.addEventListener("mouseleave", () => {
-      hoverDiv2.textContent = initialText2;
-    });
-
-    const hoverDiv3 = document.getElementById("hover-div-3");
-    const initialText3 = "DROP OFF SERVICE";
-    const hoveredText3 =
-      "Drop off available daily. Come Monday - Thursday for special pricing.";
-
-    hoverDiv3.addEventListener("mouseenter", () => {
-      hoverDiv3.textContent = hoveredText3;
-    });
-
-    hoverDiv3.addEventListener("mouseleave", () => {
-      hoverDiv3.textContent = initialText3;
-    });
-
-    const hoverDiv4 = document.getElementById("hover-div-4");
-    const initialText4 = "PICKUP & DELIVERY";
-    const hoveredText4 = "Coming soon!";
-
-    hoverDiv4.addEventListener("mouseenter", () => {
-      hoverDiv4.textContent = hoveredText4;
-    });
-
-    hoverDiv4.addEventListener("mouseleave", () => {
-      hoverDiv4.textContent = initialText4;
-    });
+        hoverDiv.addEventListener("mouseenter", () => {
+          if (hoveredText != "") hoverDiv.textContent = hoveredText;
+        });
+        hoverDiv.addEventListener("mouseleave", () => {
+          if (hoveredText != "") hoverDiv.textContent = initialText;
+        });
+      });
+    }
+    tileTextHover(tileInfo);
   }, []);
 
   return (
     <div>
-      <Head lang="en">
+      <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>St. Albans Laundromat</title>
         <Script src="https://fonts.cdnfonts.com/css/open-sauce-one" />
@@ -67,12 +71,16 @@ export default function Home() {
       </Head>
 
       <main>
+        {/* <Menu /> */}
+        {/* <Mobile /> */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 ">
-          <div className="h-screen w-full flex items-center justify-center lg:col-span-2 md:col-span-5 bg-cover bg-center flex-col relative bgimg">
-            <Header />
-            <Footer />
-          </div>
-          <Body />
+          <Header className="h-screen w-full flex items-center justify-center lg:col-span-2 md:col-span-5 bg-cover bg-center flex-col relative bgimg" />
+          <Tiles
+            tileInfo={tileInfo}
+            className={
+              "hide-on-small lg:col-span-3 grid grid-cols-2 gap-3 font-bold text-center text-white text-2xl w-full"
+            }
+          />
         </div>
       </main>
     </div>

@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Footer() {
+function Footer({className}) {
   return (
-    <div className="absolute transform bottom-0 text-white text-center items-center">
+    <div className={className}>
     <div className="flex flex-row items-center justify-evenly">
       <div>
         <a
