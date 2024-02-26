@@ -8,12 +8,13 @@ function MobileTiles({ tileInfo }) {
       let bgColor = element.bgColor;
 
       tileArr.push(
-        <div key={i + 1} className={tileClass}
-        style={{backgroundColor:bgColor}}
+        <div
+          key={i + 1}
+          className={tileClass}
+          style={{ backgroundColor: bgColor }}
         >
           <p className="font-bold">{element.initialText}</p>
-          <p className="text-sm">{element.hoveredText}
-          </p>{" "}
+          <p className="text-sm">{console.log(element.hoveredText)}</p>{" "}
         </div>
       );
     });
@@ -24,7 +25,7 @@ function MobileTiles({ tileInfo }) {
       id="tham-menu-div"
       className="grid grid-cols-1 gap-2 font-bold text-center text-white text-2xl w-full tham-menu hide-on-large"
     >
-     {renderTiles()}
+      {renderTiles()}
     </div>
   );
 }

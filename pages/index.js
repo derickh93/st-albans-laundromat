@@ -8,12 +8,13 @@ export default function Home() {
   const tileInfo = [
     {
       initialText: "WASH & WIN PRIZES",
-      hoveredText: "Enter our prize raffle each time you wash with us.",
+      hoveredText:
+        "Washing in store with us? Play our Spin and Win game to make your load a little lighter.",
       bgColor: "#0CC0DF",
     },
     {
       initialText: "SELF SERVICE",
-      hoveredText: "Available everyday. Last wash is at 7pm.",
+      hoveredText: "Available everyday. Last wash is at 6:30pm.",
       bgColor: "#FF66C4",
     },
     {
@@ -24,7 +25,7 @@ export default function Home() {
     },
     {
       initialText: "PICKUP & DELIVERY",
-      hoveredText: "Coming soon!",
+      hoveredText: <a href="https://cleancloudapp.com/s3/29554">Book Now</a>,
       bgColor: "#FF914D",
     },
     {
@@ -69,13 +70,16 @@ export default function Home() {
 
       <main>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 ">
-          <Header tileInfo={tileInfo} className="h-screen w-full flex items-center justify-center lg:col-span-2 md:col-span-5 bg-cover bg-center flex-col relative bgimg" />
+          <Header
+            tileInfo={tileInfo}
+            className="h-screen w-full flex items-center justify-center lg:col-span-2 md:col-span-5 bg-cover bg-center flex-col relative bgimg"
+          />
           <LargeTiles
             tileInfo={tileInfo}
             className={
               "hide-on-small lg:col-span-3 grid grid-cols-2 gap-3 font-bold text-center text-white text-2xl w-full"
             }
-            />
+          />
         </div>
       </main>
     </div>

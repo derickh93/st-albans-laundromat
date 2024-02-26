@@ -1,19 +1,18 @@
 import React from "react";
 
-function LargeTiles({ tileInfo,className}) {
-
+function LargeTiles({ tileInfo, className }) {
   function renderTiles() {
     let tileArr = [];
     tileInfo.forEach((element, i) => {
       let id = `hover-div-${i + 1}`;
       let bgColor = element.bgColor;
-      let tileClass = `tiles flex flex-col h-full justify-center`
+      let tileClass = `tiles flex flex-col h-full justify-center`;
       tileArr.push(
         <div
-        key={i+1}
+          key={i + 1}
           id={id}
           className={tileClass}
-          style={{backgroundColor:bgColor}}
+          style={{ backgroundColor: bgColor }}
         >
           {element.initialText}
         </div>
@@ -22,12 +21,7 @@ function LargeTiles({ tileInfo,className}) {
     return tileArr;
   }
 
-
-  return (
-    <div className={className}>
-      {renderTiles()}
-    </div>
-  );
+  return <div className={className}>{renderTiles()}</div>;
 }
 
 export default LargeTiles;
