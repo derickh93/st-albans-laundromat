@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "./Footer";
 import Menu from "./Menu";
 import MobileTiles from "./MobileTiles";
+import Modal from "./Modal";
 
 function Header({ className, tileInfo }) {
   return (
@@ -33,6 +34,7 @@ function Header({ className, tileInfo }) {
           >
             Book Now
           </a>
+          <Modal />
         </div>
       </div>
 
