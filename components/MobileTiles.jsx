@@ -14,7 +14,7 @@ function MobileTiles({ tileInfo }) {
           style={{ backgroundColor: bgColor }}
         >
           <p className="font-bold">{element.initialText}</p>
-          <p className="text-sm">{console.log(element.hoveredText)}</p>{" "}
+          <p className="text-sm">{element.hoveredText}</p>{" "}
         </div>
       );
     });
