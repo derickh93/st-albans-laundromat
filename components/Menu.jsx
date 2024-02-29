@@ -1,10 +1,10 @@
-import React from 'react'
+import React from "react";
 
-function Menu({className}) {
-    function toggleMenu() {
-        const menu = document.getElementById("tham-menu-div");
-        menu.classList.toggle("tham-menu");
-      }
+function Menu({ className }) {
+  function toggleMenu() {
+    const menu = document.getElementById("tham-menu-div");
+    menu.classList.toggle("tham-menu");
+  }
   return (
     <div className={className}>
       <button onClick={toggleMenu} className="relative group delay-0">
@@ -21,7 +21,8 @@ function Menu({className}) {
           </div>
         </div>
       </button>
-    </div>  )
+    </div>
+  );
 }
 
-export default Menu
+export default Menu;

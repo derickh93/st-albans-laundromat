@@ -2,7 +2,6 @@ import React from "react";
 import Footer from "./Footer";
 import Menu from "./Menu";
 import MobileTiles from "./MobileTiles";
-import Modal from "./Modal";
 
 function Header({ className, tileInfo }) {
   return (
@@ -21,20 +20,25 @@ function Header({ className, tileInfo }) {
         </div>
       </div>
 
-      <div>
+      <div className="absolute text-center pt-10 font-bold">
         <div>
           <span className="text-[#FFDE59] text-3xl drop-shadow-lg">
             Pickup & Delivery now available
           </span>
         </div>
-        <div className="content-center">
-          <a
-            className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"
-            href="https://cleancloudapp.com/s3/29554"
-          >
-            Book Now
+        <div>
+          <a href="https://cleancloudapp.com/s3/29554">
+            <button class="bg-blue-300 hover:bg-blue-400 text-blue-800 font-bold py-2 px-4 rounded inline-flex items-center">
+              <svg
+                class="fill-current w-4 h-4 mr-2"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+              >
+                <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
+              </svg>
+              <span>Book Now</span>{" "}
+            </button>
           </a>
-          <Modal />
         </div>
       </div>
 

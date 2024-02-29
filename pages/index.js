@@ -25,7 +25,8 @@ export default function Home() {
     },
     {
       initialText: "PICKUP & DELIVERY",
-      hoveredText: <a href="https://cleancloudapp.com/s3/29554">Book Now</a>,
+      hoveredText:
+        "Schedule Pickup & Delivery with our partners at Laundry Pickup Day",
       bgColor: "#FF914D",
     },
     {
