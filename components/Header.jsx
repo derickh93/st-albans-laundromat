@@ -30,7 +30,7 @@ function Header({ className, tileInfo }) {
         </div>
         <div>
           <a href="https://cleancloudapp.com/s3/29554">
-            <button class="bg-blue-300 hover:bg-blue-400 text-blue-800 font-bold py-2 px-4 rounded inline-flex items-center">
+            <button className="bg-blue-300 hover:bg-blue-400 text-blue-800 font-bold py-2 px-4 rounded inline-flex items-center">
               <Image
                 src={scheduleIcon}
                 width={20}
@@ -40,6 +40,11 @@ function Header({ className, tileInfo }) {
               <span className="pl-1">Book Now</span>{" "}
             </button>
           </a>
+        </div>
+        <div className="content-center flex flex-col">
+          <span>Pricing starting at </span>
+          <span>$1.75 /lb on demand</span>
+          <span>$1.49 /lb with subscription</span>
         </div>
       </div>
 

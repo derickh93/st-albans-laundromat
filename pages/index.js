@@ -11,34 +11,40 @@ export default function Home() {
       hoveredText:
         "Washing in store with us? Play our Spin and Win game to make your load a little lighter.",
       bgColor: "#0CC0DF",
+      url: "",
     },
     {
       initialText: "SELF SERVICE",
       hoveredText: "Available everyday. Last wash is at 6:30pm.",
       bgColor: "#FF66C4",
+      url: "",
     },
     {
       initialText: "DROP OFF SERVICE",
       hoveredText:
         "Drop off available daily. Come Monday - Thursday for special pricing.",
       bgColor: "#CB6CE6",
+      url: "",
     },
     {
       initialText: "PICKUP & DELIVERY",
       hoveredText:
         "Schedule Pickup & Delivery with our partners at Laundry Pickup Day",
       bgColor: "#FF914D",
+      url: "https://laundrypickupday.com/",
     },
     {
       initialText:
         "OUR LOCATION 18005 Linden Blvd Queens, NY 11434 (929) 933-7507",
       hoveredText: "",
       bgColor: "#6422B8",
+      url: "",
     },
     {
       initialText: "OPEN 7 DAYS 8AM - 8PM",
       hoveredText: "",
       bgColor: "#FFB859",
+      url: "",
     },
   ];
 

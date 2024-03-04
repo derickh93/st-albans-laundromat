@@ -13,6 +13,9 @@ function LargeTiles({ tileInfo, className }) {
           id={id}
           className={tileClass}
           style={{ backgroundColor: bgColor }}
+          onClick={() => {
+            if (element.url) window.location = element.url;
+          }}
         >
           {element.initialText}
         </div>
