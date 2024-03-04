@@ -41,7 +41,7 @@ function Header({ className, tileInfo }) {
             </button>
           </a>
         </div>
-        <div className="content-center flex flex-col">
+        <div className="text-[#004AAD] content-center flex flex-col">
           <span>Pricing starting at </span>
           <span>$1.75 /lb on demand</span>
           <span>$1.49 /lb with subscription</span>
