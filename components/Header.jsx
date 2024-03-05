@@ -22,15 +22,15 @@ function Header({ className, tileInfo }) {
         </div>
       </div>
 
-      <div className="absolute text-center pt-10 font-bold">
+      <div className="absolute text-center pt-20 font-bold">
         <div>
           <span className="text-[#FFDE59] text-3xl drop-shadow-lg">
             Pickup & Delivery now available
           </span>
         </div>
-        <div>
+        <div className="p-10">
           <a href="https://cleancloudapp.com/s3/29554">
-            <button className="bg-blue-300 hover:bg-blue-400 text-blue-800 font-bold py-2 px-4 rounded inline-flex items-center">
+            <button className="m-5 bg-blue-300 hover:bg-blue-400 text-blue-800 font-bold py-2 px-4 rounded inline-flex items-center">
               <Image
                 src={scheduleIcon}
                 width={20}
@@ -38,6 +38,17 @@ function Header({ className, tileInfo }) {
                 alt="Schedule buttom"
               />{" "}
               <span className="pl-1">Book Now</span>{" "}
+            </button>
+          </a>
+          <a href="https://stalbanslaundromat.com">
+            <button className="m-5 bg-blue-300 hover:bg-blue-400 text-blue-800 font-bold py-2 px-4 rounded inline-flex items-center">
+              <Image
+                src={scheduleIcon}
+                width={20}
+                height={20}
+                alt="Schedule buttom"
+              />{" "}
+              <span className="pl-1">Information</span>{" "}
             </button>
           </a>
         </div>
