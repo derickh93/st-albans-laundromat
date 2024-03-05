@@ -4,6 +4,7 @@ import Menu from "./Menu";
 import MobileTiles from "./MobileTiles";
 import Image from "next/image";
 import scheduleIcon from "../public/schedule.png";
+import importantIcon from "../public/icons8-information-64.png";
 
 function Header({ className, tileInfo }) {
   return (
@@ -28,7 +29,7 @@ function Header({ className, tileInfo }) {
             Pickup & Delivery now available
           </span>
         </div>
-        <div className="p-10">
+        <div>
           <a href="https://cleancloudapp.com/s3/29554">
             <button className="m-5 bg-blue-300 hover:bg-blue-400 text-blue-800 font-bold py-2 px-4 rounded inline-flex items-center">
               <Image
@@ -43,7 +44,7 @@ function Header({ className, tileInfo }) {
           <a href="https://stalbanslaundromat.com">
             <button className="m-5 bg-blue-300 hover:bg-blue-400 text-blue-800 font-bold py-2 px-4 rounded inline-flex items-center">
               <Image
-                src={scheduleIcon}
+                src={importantIcon}
                 width={20}
                 height={20}
                 alt="Schedule buttom"
