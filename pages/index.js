@@ -29,7 +29,7 @@ export default function Home() {
     {
       initialText: "PICKUP & DELIVERY",
       hoveredText:
-        "Schedule Pickup & Delivery with our partners at Laundry Pickup Day",
+        "Schedule Pickup & Delivery with our partners at Laundry Pickup Day. Click here for more information",
       bgColor: "#FF914D",
       url: "https://laundrypickupday.com/",
     },
@@ -84,7 +84,7 @@ export default function Home() {
           <LargeTiles
             tileInfo={tileInfo}
             className={
-              "hide-on-small lg:col-span-3 grid grid-cols-2 gap-3 font-bold text-center text-white text-2xl w-full"
+              "pr-5 hide-on-small lg:col-span-3 grid grid-cols-2 gap-3 font-bold text-center text-white text-2xl w-full"
             }
           />
         </div>

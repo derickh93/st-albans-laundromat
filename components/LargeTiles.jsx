@@ -17,7 +17,7 @@ function LargeTiles({ tileInfo, className }) {
             if (element.url) window.location = element.url;
           }}
         >
-          {element.initialText}
+          <span className="">{element.initialText}</span>
         </div>
       );
     });
