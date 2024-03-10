@@ -23,13 +23,13 @@ function Header({ className, tileInfo }) {
         </div>
       </div>
 
-      <div className="absolute text-center pt-20 font-bold">
-        <div>
+      <div className="transform text-center pt-40 font-bold">
+        <div className="transparent_bg">
           <span className="text-[#FFDE59] text-3xl drop-shadow-lg">
             Pickup & Delivery now available
           </span>
         </div>
-        <div>
+        <div className="pt-10">
           <a href="https://cleancloudapp.com/s3/29554">
             <button className="m-5 bg-blue-300 hover:bg-blue-400 text-blue-800 font-bold py-2 px-4 rounded inline-flex items-center">
               <Image
@@ -42,7 +42,7 @@ function Header({ className, tileInfo }) {
             </button>
           </a>
           <a href="https://stalbanslaundromat.com">
-            <button className="m-5 bg-blue-300 hover:bg-blue-400 text-blue-800 font-bold py-2 px-4 rounded inline-flex items-center">
+            <button className="m-5 bg-blue-300 hover:bg-blue-400 text-blue-800 font-bold py-2 px-4 rounded inline-flex items-center drop-shadow-lg font-bold">
               <Image
                 src={importantIcon}
                 width={20}
@@ -53,7 +53,7 @@ function Header({ className, tileInfo }) {
             </button>
           </a>
         </div>
-        <div className="text-[#004AAD] content-center flex flex-col">
+        <div className="text-[#004AAD] content-center flex flex-col drop-shadow-lg font-bold pt-10">
           <span>Pricing starting at </span>
           <span>$1.50 /lb on demand</span>
           <span>$1.25 /lb with subscription</span>

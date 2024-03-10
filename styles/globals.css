@@ -80,3 +80,11 @@ iframe {
   padding: 0px;
   border: none;
 }
+
+.transparent_bg {
+  background-color: #494d4955;
+  /*-- The value after six digit is your alpha color or opacity of background.--*/
+  background-color: grey; /*-- Same as previous one.--*/
+  background-color: rgba(99, 101, 99, 0.5); /*-- a extend for alpha color--*/
+  box-shadow: 5;
+}
