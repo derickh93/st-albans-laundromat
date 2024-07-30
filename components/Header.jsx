@@ -41,7 +41,7 @@ function Header({ className, tileInfo }) {
               <span className="pl-1">Book Now</span>{" "}
             </button>
           </a>
-          <a href="https://stalbanslaundromat.com">
+          <a href="https://laundrypickupday.com">
             <button className="m-5 bg-blue-300 hover:bg-blue-400 text-blue-800 font-bold py-2 px-4 rounded inline-flex items-center drop-shadow-lg font-bold">
               <Image
                 src={importantIcon}
