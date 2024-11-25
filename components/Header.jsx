@@ -55,8 +55,8 @@ function Header({ className, tileInfo }) {
         </div>
         <div className="text-[#004AAD] content-center flex flex-col drop-shadow-lg font-bold pt-10">
           <span>Pricing starting at </span>
-          <span>$1.50 /lb on demand</span>
-          <span>$1.25 /lb with subscription</span>
+          <span>$1.25 /lb on demand</span>
+          <span>$1.00 /lb with subscription</span>
         </div>
       </div>
 
