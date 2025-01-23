@@ -7,9 +7,9 @@ import { useEffect } from "react";
 export default function Home() {
   const tileInfo = [
     {
-      initialText: "WASH & WIN PRIZES",
+      initialText: "DRY CLEAN",
       hoveredText:
-        "Washing in store with us? Play our Spin and Win game to make your load a little lighter.",
+        "Dry Cleaning available with turnaround time usually 24-48 hours. Call for pricing.",
       bgColor: "#0CC0DF",
       url: "",
     },
